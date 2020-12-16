@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/barber_shop_activity_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout_barber_shop_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shape_selector_tarsient_without_stroke"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/barColor"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlwaysCollapsed"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="100dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/barbershop_activity_image_view"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                app:civ_border_color="@color/YellowDark"
+                app:civ_border_width="2dp"/>
+
+            <TextView
+                android:fontFamily="@font/assistant_bold"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/barbershop_activity_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:id="@+id/barbershop_name_activity_barber_shop"
+                android:textColor="@color/White"
+                android:text="@string/barbershop_name"/>
+
+            <TextView
+                android:id="@+id/type_barbershop_activity_barber_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/assistant_regular"
+                android:layout_below="@id/rating_barber_shop"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/barbershop_subtitle"
+                android:textColor="@color/White"
+                android:textSize="15sp" />
+
+            <RatingBar
+                android:id="@+id/rating_barber_shop"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginVertical="6dp"
+                android:layout_marginTop="4dp"
+                android:numStars="5"
+                android:saveEnabled="true"
+                android:padding="10dp"/>
+
+
+        </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:layout_collapseMode="pin"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bottom_clear"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recycler_show_barber_pictures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layoutDirection="ltr" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/top_bottom_yellow_light"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:fontFamily="@font/agency"
+                    android:text="@string/reviews"
+                    android:textAllCaps="true"
+                    android:id="@+id/review_title"
+                    android:textColor="@color/White"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/add_review_bt"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/shape_selector_opacity_60_yellow"
+                    android:fontFamily="@font/assistant_light"
+                    android:padding="1dp"
+                    android:text="@string/add_review"
+                    android:textColor="@color/White"
+                    android:textSize="12.5sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/new_review_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:numStars="5"
+                    android:layout_marginVertical="5dp"
+                    android:padding="1dp"
+                    android:saveEnabled="true"
+                    android:stepSize="1" />
+
+                <EditText
+                    android:id="@+id/review_text_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/White"
+                    android:hint="@string/review_hint"
+                    android:padding="20dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_below="@id/rating"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White" />
+
+
+                <Button
+                    android:id="@+id/submit_review_bt"
+                    android:background="@drawable/shape_selector_opacity_60_yellow"
+                    android:padding="1dp"
+                    android:layout_marginVertical="10dp"
+                    android:textColor="@color/White"
+                    android:layout_marginStart="300dp"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/assistant_light"
+                    android:textSize="12.5sp"
+                    android:text="@string/post" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_barber_reviews"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/image_btn_phone"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_baseline_phone_24"
+        app:pressedTranslationZ="80dp"
+        app:layout_anchor="@id/ancor_to_me"
+        android:layout_marginEnd="25dp"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/image_btn_navigation"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_baseline_navigation_24"
+        app:pressedTranslationZ="80dp"
+        app:layout_anchor="@id/ancor_to_me"
+        android:layout_marginEnd="120dp"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/image_btn_message"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_baseline_message_24"
+        app:pressedTranslationZ="80dp"
+        app:layout_anchor="@id/ancor_to_me"
+        android:layout_marginEnd="215dp"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/image_btn_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="310dp"
+        android:src="@drawable/ic_baseline_home_24"
+        app:layout_anchor="@id/ancor_to_me"
+        app:layout_anchorGravity="bottom|end"
+        app:pressedTranslationZ="80dp" />
+
+    <TextView
+        android:id="@+id/ancor_to_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@+id/appBar"
+        app:layout_anchorGravity="bottom|center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

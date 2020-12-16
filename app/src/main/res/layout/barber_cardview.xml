@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/top_bottom_all_barber"
+    android:layout_height="130dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/barebrshop_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_weight="1"
+        app:civ_border_color="@color/YellowDark"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@+id/barebrshop_picture"
+        android:layout_weight="4"
+        android:layout_marginVertical="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/assistant_semi_bold"
+            android:id="@+id/barebrshop_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/White"
+            android:text="Title"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/barebrshop_city"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/White"
+            android:fontFamily="@font/assistant_light"
+            android:layout_marginHorizontal="1dp"
+            android:text="City"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="5dp"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:id="@+id/edit_barebrshop_bt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="5dp"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/White"
+            android:padding="5dp"
+            android:id="@+id/distance_tv"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

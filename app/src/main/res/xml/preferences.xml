@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:fontFamily="@font/assistant_semi_bold"
+        android:title="Personal Settings"/>
+
+    <Preference
+        android:title="@string/basic_Information"
+        android:layout="@layout/preference_basic_information"
+        android:key="ChangeBasicInfo"/>
+
+    <Preference
+        android:title="@string/profile_picture"
+        android:layout="@layout/preference_change_profile"
+        android:key="ChangeProfilePicture"/>
+
+
+    <PreferenceCategory
+        android:fontFamily="@font/assistant_semi_bold"
+        android:title="@string/account_settings"/>
+
+    <dialog.NotificationPreference
+        android:title="Notifications"
+        android:layout="@layout/preference_notifications"
+        android:defaultValue="true"
+        android:key="@string/notifications"/>
+
+    <Preference
+        android:title="@string/delete_account"
+        android:layout="@layout/preference_delete_account"
+        android:key="DeleteAccount"/>
+
+
+</PreferenceScreen>

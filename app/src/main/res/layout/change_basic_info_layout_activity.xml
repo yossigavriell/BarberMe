@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash"
+    android:orientation="vertical">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:id="@+id/image_logo"
+                android:src="@drawable/logo_white"
+                android:layout_marginHorizontal="70dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/first_name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/YellowApp"
+                        android:hint="@string/first_name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/White"
+                        android:textSize="17.5sp" />
+
+                    <EditText
+                        android:id="@+id/last_name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/YellowApp"
+                        android:hint="@string/last_name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/White"
+                        android:textSize="17.5sp" />
+                </LinearLayout>
+
+
+
+                <EditText
+                    android:id="@+id/email_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/YellowApp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White"
+                    android:textSize="17.5sp" />
+
+                <EditText
+                    android:id="@+id/preference_new_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/YellowApp"
+                    android:hint="@string/new_password"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White"
+                    android:textSize="17.5sp" />
+
+                <EditText
+                    android:id="@+id/preference_confirm_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/YellowApp"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White"
+                    android:textSize="17.5sp" />
+
+
+                <Button
+                    android:id="@+id/save_change_edit_personal_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/assistant_regular"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/shape_selector_yellowapp"
+                    android:padding="5dp"
+                    android:paddingHorizontal="70dp"
+                    android:text="@string/save_changes"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

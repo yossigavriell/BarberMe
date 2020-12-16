@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_splash"
+    android:orientation="vertical">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:fontFamily="@font/agency"
+                android:textColor="@color/YellowApp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="@string/add_barber_shop"/>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="40dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"
+                    android:textSize="17.5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:backgroundTint="@color/YellowApp"
+                    android:hint="@string/barbershop_name"
+                    android:id="@+id/name_et"/>
+
+                <EditText
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"
+                    android:textSize="17.5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:backgroundTint="@color/YellowApp"
+                    android:hint="@string/barbershop_type"
+                    android:id="@+id/type_et"/>
+
+                <EditText
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:backgroundTint="@color/YellowApp"
+                    android:textSize="17.5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/city"
+                    android:id="@+id/city_et"/>
+
+                <EditText
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"
+                    android:textSize="17.5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address_et"
+                    android:hint="@string/address"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:backgroundTint="@color/YellowApp"/>
+
+                <EditText
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"
+                    android:textSize="17.5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone_et"
+                    android:hint="@string/phone_number"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:backgroundTint="@color/YellowApp"/>
+
+
+                <EditText
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"
+                    android:textSize="17.5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/website_et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:backgroundTint="@color/YellowApp"
+                    android:hint="@string/website"/>
+
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_selector_transparent"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_add_a_photo_orange_24"
+                    android:id="@+id/upload_button"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pictures_count"
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"
+                    android:fontFamily="@font/assistant_light"
+                    android:textSize="17.5sp"
+                    android:textColor="@color/White"
+                    android:layout_below="@+id/upload_layout"
+
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/pictures_count_tv"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerview_pics"/>
+
+                <Button
+                    android:id="@+id/finish_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/shape_selector_yellowapp"
+                    android:padding="5dp"
+                    android:fontFamily="@font/assistant_regular"
+                    android:text="@string/add"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>>
+    </ScrollView>
+</LinearLayout>

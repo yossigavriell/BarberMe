@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "688757269137",
+    "firebase_url": "https://barberme-83e8b.firebaseio.com",
+    "project_id": "barberme-83e8b",
+    "storage_bucket": "barberme-83e8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688757269137:android:a204a876c4f614441ed530",
+        "android_client_info": {
+          "package_name": "com.example.barberme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688757269137-qtrf93g9svg9bovtq69qiu1m4pq439lf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.barberme",
+            "certificate_hash": "bbdcd1dc77928f9cc172b3c7931d1d70913d55fe"
+          }
+        },
+        {
+          "client_id": "688757269137-f993spsi73kld1i6ngp5o4i2h3rq3blb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7Rdw5CWoHT3v8SK-g87IKLqPcJQBIZkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688757269137-f993spsi73kld1i6ngp5o4i2h3rq3blb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

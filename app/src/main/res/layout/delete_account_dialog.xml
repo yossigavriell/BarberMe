@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:background="@drawable/black_transient"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:text="@string/delete_account"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/assistant_semi_bold"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:fontFamily="@font/assistant_light"
+        android:layout_marginStart="20dp"
+        android:layout_marginVertical="5dp"
+        android:text="@string/delete_account_question"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/delete_account_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/assistant_regular"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/shape_selector_yellowapp"
+        android:textColor="@color/Black"
+        android:text="@string/confirm" />
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:background="@drawable/black_transient"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/White"
+        android:fontFamily="@font/assistant_semi_bold"
+        android:textSize="25sp"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout_message"
+        android:textColor="@color/White"
+
+        android:textColorHint="@color/White"
+        android:backgroundTint="@color/White"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/logout_bt"
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/assistant_regular"
+
+            android:background="@drawable/shape_selector_yellowapp"
+            android:textColor="@color/Black"
+            android:text="@string/confirm" />
+
+        <Button
+            android:id="@+id/cancel_bt"
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/assistant_regular"
+            android:background="@drawable/shape_selector_yellowapp"
+            android:textColor="@color/Black"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

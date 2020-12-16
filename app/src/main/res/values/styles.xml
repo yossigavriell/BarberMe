@@ -1,0 +1,44 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/barColor</item>
+        <item name="colorPrimaryDark">@color/cardViewColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PreferenceTheme" parent="@style/AppTheme">
+        <item name="android:colorBackground">@color/BlackHide</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AlertDialog.Builder" parent="android:style/Theme.Dialog">
+        <item name="android:textColor">@color/YellowDark</item>
+        <item name="actionMenuTextColor">@color/YellowDark</item>
+        <item name="android:titleTextStyle">@font/assistant_bold</item>
+        <item name="titleTextColor">@color/YellowDark</item>
+        <item name="fontFamily">@font/assistant_bold</item>
+        <item name="android:textColorAlertDialogListItem">@color/White</item>
+        <item name="colorPrimary">@color/YellowApp</item>
+        <item name="android:background">@color/BlackHide</item>
+        <item name="textColorAlertDialogListItem">#FFF</item>
+        <item name="android:headerDividersEnabled">true</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="fontFamily">@font/agency</item>
+        <item name="android:textSize">50sp</item> <!-- menu item text size-->
+        <item name="android:listPreferredItemHeightSmall">40dp</item><!-- menu item height-->
+        <item name="font">@font/agency</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="preferenceStyle">@font/agency</item>
+        <item name="android:textColorPrimary">@color/White</item>
+        <item name="android:textColorSecondary">@color/YellowDark</item>
+    </style>
+
+</resources>

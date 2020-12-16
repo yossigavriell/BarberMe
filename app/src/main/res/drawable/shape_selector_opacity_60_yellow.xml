@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape>
+            <gradient
+
+                android:startColor="@color/Yellow_opacity_60"
+                android:centerColor="@color/Yellow_opacity_60"
+                android:endColor="@color/Yellow_opacity_60"
+                android:angle="270"/>
+
+            <stroke
+                android:width="0dp"
+                android:dashWidth="0dp"
+                android:color="@color/YellowApp"/>
+            <corners android:radius="45dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <gradient
+
+                android:startColor="@color/Yellow_opacity_60"
+                android:endColor="@color/White"
+                android:angle="270"/>
+
+            <stroke
+                android:width="0dp"
+                android:dashWidth="0dp"/>
+
+            <corners android:radius="45dp"/>
+        </shape>
+    </item>
+
+
+</selector>

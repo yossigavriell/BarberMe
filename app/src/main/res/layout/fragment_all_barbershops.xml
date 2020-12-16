@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout_barber_shop_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_selector_tarsient_without_stroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/barColor"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_anchor="@+id/appBar"
+            app:layout_anchorGravity="center"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlwaysCollapsed">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/logo_image_barber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="70dp"
+                    android:src="@drawable/logo_white" />
+
+
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            app:layout_collapseMode="pin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/top_bottom_clear"
+            android:id="@+id/my_barbershops_text"
+            android:layout_height="wrap_content">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/all_barber_shops"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:padding="5dp"
+            android:textColor="@color/YellowApp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/agency"
+            />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="gone">
+
+            <EditText
+                android:layout_margin="1dp"
+                android:id="@+id/search_title"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"
+                android:background="@drawable/shape_selector_tarsient_without_stroke"
+                android:backgroundTint="@color/YellowDark"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/assistant_light"
+                android:padding="1dp"
+                android:layout_height="match_parent"
+                android:hint="@string/search"/>
+
+
+            <ImageButton
+                android:padding="1dp"
+                android:id="@+id/search_bt"
+                android:layout_margin="1dp"
+                android:layout_width="0dp"
+                android:src="@drawable/ic_baseline_search_24"
+                android:background="@drawable/shape_selector_yellow_dark"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/search" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/barbers_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layoutDirection="ltr" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

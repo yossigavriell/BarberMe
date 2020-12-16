@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B3000000</color>
+    <color name="colorPrimaryDark">#B3000000</color>
+    <color name="colorAccent">#FBB940</color>
+    <color name="barColor">#B3000000</color>
+    <color name="cardViewColor">#B3000000</color>
+    <color name="White">#FFF</color>
+    <color name="YellowApp">#FFCE6A</color>
+    <color name="YellowDark">#FBB940</color>
+    <color name="BlackHide">#B3000000</color>
+    <color name="Black">#000</color>
+    <color name="Gray">#7C7A7A</color>
+    <color name="black_85">#D9000000</color>
+    <color name="Yellow_opacity_20">#33FFCE6A</color>
+    <color name="Yellow_opacity_60">#99FFCE6A</color>
+    <color name="Black_opacity_90">#E6000000</color>
+</resources>

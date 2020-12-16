@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash"
+    android:orientation="vertical">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:id="@+id/image_logo"
+                android:src="@drawable/logo_white"
+                android:layout_marginHorizontal="70dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="50dp"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:fontFamily="@font/assistant_light"
+                        android:backgroundTint="@color/YellowApp"
+                        android:id="@+id/first_name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="17.5sp"
+                        android:hint="@string/first_name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/White" />
+
+                    <EditText
+                        android:fontFamily="@font/assistant_light"
+                        android:backgroundTint="@color/YellowApp"
+                        android:id="@+id/last_name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="17.5sp"
+                        android:hint="@string/last_name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/White" />
+                </LinearLayout>
+
+                <EditText
+                    android:fontFamily="@font/assistant_light"
+                    android:backgroundTint="@color/YellowApp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/birthday"
+                    android:inputType="date"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White"
+                    android:textSize="17.5sp" />
+
+                <EditText
+                    android:fontFamily="@font/assistant_light"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address"
+                    android:backgroundTint="@color/YellowApp"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White"
+                    android:textSize="17.5sp" />
+
+                <RadioGroup
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/radio"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/assistant_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gender"
+                            android:padding="5dp"
+                            android:textSize="17.5sp"
+                            android:textColor="@color/White"
+                            android:textColorHint="@color/YellowApp" />
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:fontFamily="@font/assistant_light"
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/male"
+                        android:buttonTint="@color/color_selector"
+                        android:textColor="@color/White" />
+
+                    <RadioButton
+                        android:fontFamily="@font/assistant_light"
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color_selector"
+                        android:text="@string/female"
+                        android:textColor="@color/White" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:fontFamily="@font/assistant_light"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/email_et"
+                    android:backgroundTint="@color/YellowApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White"
+                    android:textSize="17.5sp" />
+
+                <EditText
+                    android:fontFamily="@font/assistant_light"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:backgroundTint="@color/YellowApp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White"
+                    android:textSize="17.5sp" />
+
+                <EditText
+                    android:fontFamily="@font/assistant_light"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/confirm_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:backgroundTint="@color/YellowApp"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White"
+                    android:textSize="17.5sp" />
+
+                <Button
+                    android:id="@+id/signup_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:fontFamily="@font/assistant_regular"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/shape_selector_yellowapp"
+                    android:paddingHorizontal="70dp"
+                    android:text="@string/signup"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
